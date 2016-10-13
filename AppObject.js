@@ -24,14 +24,17 @@ function App(n,m,s){
     //Declare the instance function close here.
     this.close=function(){
       if(this.state/="null"){
-        this.state=null
+        this.state="null"
+        this.memory=0
       }
     };
 }
-
 //Use the constructor to create 4 App objects below.
+var snapchat= new App(snapchat,99,"active")
+var instagram= new App(instagram,77,"active")
+var facebook= new App(facebook,88,"active")
+var twitter= new App(twitter,66,"sleep")
 
-
-
+appList=[snapchat,instagram,facebook,twitter]
 //Declare an array named appList, and place all 4 of your apps in that array.
 //The order does not matter.
